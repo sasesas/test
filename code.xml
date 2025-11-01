@@ -11,7 +11,7 @@
     <dateTimeUpload></dateTimeUpload>
     <description></description>
     <deviceName>23117RA68G</deviceName>
-    <gitRemoteUrl></gitRemoteUrl>
+    <gitRemoteUrl>https://github.com/sasesas/test.git</gitRemoteUrl>
     <isCastProject>false</isCastProject>
     <landscapeMode>true</landscapeMode>
     <listeningLanguageTag></listeningLanguageTag>
@@ -70,15 +70,15 @@
                   <brickId>f0330ae2-f906-4d2e-8dbd-3540713aa843</brickId>
                   <commentedOut>false</commentedOut>
                   <formulaList>
-                    <formula category="X_POSITION">
-                      <additionalChildren/>
-                      <type>NUMBER</type>
-                      <value>15</value>
-                    </formula>
                     <formula category="Y_POSITION">
                       <additionalChildren/>
                       <type>NUMBER</type>
                       <value>12</value>
+                    </formula>
+                    <formula category="X_POSITION">
+                      <additionalChildren/>
+                      <type>NUMBER</type>
+                      <value>15</value>
                     </formula>
                   </formulaList>
                 </brick>
@@ -94,7 +94,7 @@
                     <formula category="FIREBASE_ID">
                       <additionalChildren/>
                       <type>STRING</type>
-                      <value>clecer-7e9ec-default-rtdb.firebaseio.com/</value>
+                      <value>https://clecer-7e9ec-default-rtdb.firebaseio.com/</value>
                     </formula>
                     <formula category="FIREBASE_KEY">
                       <additionalChildren/>
@@ -105,12 +105,17 @@
                   <userVariable type="UserVariable" serialization="custom">
                     <userVariable>
                       <default>
-                        <initialIndex>-1</initialIndex>
+                        <initialIndex>0</initialIndex>
                         <deviceValueKey>b0417f26-4706-4e1a-8bfa-42b045be4dba</deviceValueKey>
                         <name>click</name>
                       </default>
                     </userVariable>
                   </userVariable>
+                </brick>
+                <brick type="SceneStartBrick">
+                  <brickId>1a615785-2740-4a0e-b989-ad12bd4d8c3a</brickId>
+                  <commentedOut>false</commentedOut>
+                  <sceneToStart>game</sceneToStart>
                 </brick>
               </brickList>
               <commentedOut>false</commentedOut>
@@ -124,9 +129,205 @@
         </object>
       </objectList>
     </scene>
+    <scene sceneId="d27417e4-7733-44b9-822e-80b8f4ec78b6">
+      <name>game</name>
+      <objectList>
+        <object type="Sprite" spriteId="b1ffc111-cbd9-493d-a84e-0ac459543783" name="Фон">
+          <lookList>
+            <look fileName="Фон.png" lookId="e29956c1-fc6b-4611-84d3-2d993dfde381" name="Фон">
+              <isWebRequest>false</isWebRequest>
+              <valid>true</valid>
+            </look>
+          </lookList>
+          <soundList/>
+          <scriptList>
+            <script type="StartScript" posX="0.0" posY="0.0">
+              <brickList>
+                <brick type="ShowTextColorSizeAlignmentBrick">
+                  <brickId>5e5b4fe8-30a5-4d27-a3dc-dea30dbf90d3</brickId>
+                  <commentedOut>false</commentedOut>
+                  <formulaList>
+                    <formula category="Y_POSITION">
+                      <additionalChildren/>
+                      <type>NUMBER</type>
+                      <value>514</value>
+                    </formula>
+                    <formula category="X_POSITION">
+                      <additionalChildren/>
+                      <type>NUMBER</type>
+                      <value>510</value>
+                    </formula>
+                    <formula category="COLOR">
+                      <additionalChildren/>
+                      <type>STRING</type>
+                      <value>#FF0000</value>
+                    </formula>
+                    <formula category="SIZE">
+                      <additionalChildren/>
+                      <type>NUMBER</type>
+                      <value>120.0</value>
+                    </formula>
+                  </formulaList>
+                  <userVariable reference="../../../../../../../../scene/objectList/object[2]/scriptList/script/brickList/brick[3]/userVariable"/>
+                  <alignmentSelection>1</alignmentSelection>
+                </brick>
+              </brickList>
+              <commentedOut>false</commentedOut>
+              <scriptId>3ef5f93a-3d6b-4d2f-a680-890ef485b960</scriptId>
+            </script>
+          </scriptList>
+          <nfcTagList/>
+          <userVariables/>
+          <userLists/>
+          <userDefinedBrickList/>
+        </object>
+        <object type="Sprite" spriteId="6c07ec53-7a72-4523-be0a-42e99fe23b44" name="клик ">
+          <lookList>
+            <look fileName="Мой актер или объект.png" lookId="9f576983-66ad-4dd7-bafc-296da533a954" name="клик ">
+              <isWebRequest>false</isWebRequest>
+              <valid>true</valid>
+            </look>
+          </lookList>
+          <soundList/>
+          <scriptList>
+            <script type="StartScript" posX="0.0" posY="0.0">
+              <brickList>
+                <brick type="PlaceAtBrick">
+                  <brickId>a0ec41e5-38e5-4cfc-83fe-0f1a2ab2b9c6</brickId>
+                  <commentedOut>false</commentedOut>
+                  <formulaList>
+                    <formula category="Y_POSITION">
+                      <additionalChildren/>
+                      <type>NUMBER</type>
+                      <value>506</value>
+                    </formula>
+                    <formula category="X_POSITION">
+                      <additionalChildren/>
+                      <type>NUMBER</type>
+                      <value>644</value>
+                    </formula>
+                  </formulaList>
+                </brick>
+              </brickList>
+              <commentedOut>false</commentedOut>
+              <scriptId>2dfeb187-f26d-464e-8b2c-6e79782d06f3</scriptId>
+            </script>
+          </scriptList>
+          <nfcTagList/>
+          <userVariables/>
+          <userLists/>
+          <userDefinedBrickList/>
+        </object>
+        <object type="Sprite" spriteId="797b3795-68b5-4064-8155-dfcb83f2c16c" name="кликнуть">
+          <lookList>
+            <look fileName="Мой актер или объект_#0.png" lookId="4d269eac-60b9-43ad-96a0-cd1c633b8625" name="кликнуть">
+              <isWebRequest>false</isWebRequest>
+              <valid>true</valid>
+            </look>
+          </lookList>
+          <soundList/>
+          <scriptList>
+            <script type="StartScript" posX="0.0" posY="0.0">
+              <brickList>
+                <brick type="ReadBaseBrick">
+                  <brickId>3d6da423-813d-46fe-9e82-de382bf54bef</brickId>
+                  <commentedOut>false</commentedOut>
+                  <formulaList>
+                    <formula category="FIREBASE_ID">
+                      <additionalChildren/>
+                      <type>STRING</type>
+                      <value>https://clecer-7e9ec-default-rtdb.firebaseio.com/</value>
+                    </formula>
+                    <formula category="FIREBASE_KEY">
+                      <additionalChildren/>
+                      <type>STRING</type>
+                      <value>clc</value>
+                    </formula>
+                  </formulaList>
+                  <userVariable reference="../../../../../../../../scene/objectList/object[2]/scriptList/script/brickList/brick[3]/userVariable"/>
+                </brick>
+                <brick type="PlaceAtBrick">
+                  <brickId>b75ba004-ba00-4b25-a560-2db7e1963d0d</brickId>
+                  <commentedOut>false</commentedOut>
+                  <formulaList>
+                    <formula category="Y_POSITION">
+                      <additionalChildren/>
+                      <type>NUMBER</type>
+                      <value>299</value>
+                    </formula>
+                    <formula category="X_POSITION">
+                      <additionalChildren/>
+                      <rightChild>
+                        <additionalChildren/>
+                        <type>NUMBER</type>
+                        <value>892</value>
+                      </rightChild>
+                      <type>OPERATOR</type>
+                      <value>MINUS</value>
+                    </formula>
+                  </formulaList>
+                </brick>
+              </brickList>
+              <commentedOut>false</commentedOut>
+              <scriptId>e8eeb7c2-5af9-490d-b3f6-c656c86de624</scriptId>
+            </script>
+            <script type="WhenScript" posX="0.0" posY="0.0">
+              <brickList>
+                <brick type="WriteBaseBrick">
+                  <brickId>b6fc48b3-e8ca-4c48-989b-fd5c9b28abb0</brickId>
+                  <commentedOut>false</commentedOut>
+                  <formulaList>
+                    <formula category="FIREBASE_ID">
+                      <additionalChildren/>
+                      <type>STRING</type>
+                      <value>https://clecer-7e9ec-default-rtdb.firebaseio.com/</value>
+                    </formula>
+                    <formula category="FIREBASE_KEY">
+                      <additionalChildren/>
+                      <type>STRING</type>
+                      <value>clc</value>
+                    </formula>
+                    <formula category="FIREBASE_VALUE">
+                      <additionalChildren/>
+                      <leftChild>
+                        <additionalChildren/>
+                        <type>USER_VARIABLE</type>
+                        <value>click</value>
+                      </leftChild>
+                      <rightChild>
+                        <additionalChildren/>
+                        <type>NUMBER</type>
+                        <value>100</value>
+                      </rightChild>
+                      <type>OPERATOR</type>
+                      <value>PLUS</value>
+                    </formula>
+                  </formulaList>
+                </brick>
+              </brickList>
+              <commentedOut>false</commentedOut>
+              <scriptId>c8d42eae-fd31-40b0-a318-ce081f373217</scriptId>
+            </script>
+          </scriptList>
+          <nfcTagList/>
+          <userVariables/>
+          <userLists/>
+          <userDefinedBrickList/>
+        </object>
+      </objectList>
+    </scene>
   </scenes>
   <programVariableList>
     <userVariable reference="../../scenes/scene/objectList/object[2]/scriptList/script/brickList/brick[3]/userVariable"/>
+    <userVariable type="UserVariable" serialization="custom">
+      <userVariable>
+        <default>
+          <initialIndex>1</initialIndex>
+          <deviceValueKey>2d91c8b8-4a24-4fbd-a919-5f7763828e37</deviceValueKey>
+          <name>clc</name>
+        </default>
+      </userVariable>
+    </userVariable>
   </programVariableList>
   <programListOfLists/>
   <programMultiplayerVariableList/>
