@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<program>
+  <header>
+    <applicationBuildName></applicationBuildName>
+    <applicationBuildNumber>0</applicationBuildNumber>
+    <applicationBuildType>release</applicationBuildType>
+    <applicationName>NewCatroid</applicationName>
+    <applicationVersion>2.0.6</applicationVersion>
+    <catrobatLanguageVersion>1.17</catrobatLanguageVersion>
+    <customResolution>false</customResolution>
+    <dateTimeUpload></dateTimeUpload>
+    <description></description>
+    <deviceName>23117RA68G</deviceName>
+    <gitRemoteUrl></gitRemoteUrl>
+    <isCastProject>false</isCastProject>
+    <landscapeMode>true</landscapeMode>
+    <listeningLanguageTag></listeningLanguageTag>
+    <mediaLicense></mediaLicense>
+    <notesAndCredits></notesAndCredits>
+    <physicsHeightArea>2.0</physicsHeightArea>
+    <physicsWidthArea>3.0</physicsWidthArea>
+    <platform>Android</platform>
+    <platformVersion>35</platformVersion>
+    <programLicense></programLicense>
+    <programName>Trako</programName>
+    <remixOf></remixOf>
+    <scenesEnabled>true</scenesEnabled>
+    <screenHeight>1080</screenHeight>
+    <screenMode>STRETCH</screenMode>
+    <screenWidth>2262</screenWidth>
+    <tags></tags>
+    <url></url>
+    <userHandle></userHandle>
+  </header>
+  <settings/>
+  <scenes>
+    <scene sceneId="9d4073e0-0771-4636-ba54-cd835514249d">
+      <name>Сцена</name>
+      <objectList>
+        <object type="Sprite" spriteId="08c48382-10a3-4481-9797-c818335ed73f" name="Фон">
+          <lookList>
+            <look fileName="Фон.png" lookId="81b1b2a8-438e-47db-9978-24fb28cfedcd" name="Фон">
+              <isWebRequest>false</isWebRequest>
+              <valid>true</valid>
+            </look>
+          </lookList>
+          <soundList/>
+          <scriptList/>
+          <nfcTagList/>
+          <userVariables/>
+          <userLists/>
+          <userDefinedBrickList/>
+        </object>
+        <object type="Sprite" spriteId="fcd16b1a-4b2c-4bb2-9425-382709e4c81b" name="загрузка">
+          <lookList>
+            <look fileName="Мой актер или объект_#0.png" lookId="68b7b04d-08d9-42ae-a9a0-95a0430c29d6" name="загрузка (1)">
+              <isWebRequest>false</isWebRequest>
+              <valid>true</valid>
+            </look>
+            <look fileName="Мой актер или объект.png" lookId="3dea3ee3-29b1-48a0-91e6-49cf4b5d205c" name="загрузка">
+              <isWebRequest>false</isWebRequest>
+              <valid>true</valid>
+            </look>
+          </lookList>
+          <soundList/>
+          <scriptList>
+            <script type="StartScript" posX="0.0" posY="0.0">
+              <brickList>
+                <brick type="PlaceAtBrick">
+                  <brickId>f0330ae2-f906-4d2e-8dbd-3540713aa843</brickId>
+                  <commentedOut>false</commentedOut>
+                  <formulaList>
+                    <formula category="X_POSITION">
+                      <additionalChildren/>
+                      <type>NUMBER</type>
+                      <value>15</value>
+                    </formula>
+                    <formula category="Y_POSITION">
+                      <additionalChildren/>
+                      <type>NUMBER</type>
+                      <value>12</value>
+                    </formula>
+                  </formulaList>
+                </brick>
+                <brick type="SetLookBrick">
+                  <brickId>045a0f99-ffc7-4961-85dd-22bbc61b4b89</brickId>
+                  <commentedOut>false</commentedOut>
+                  <look reference="../../../../../lookList/look"/>
+                </brick>
+                <brick type="ReadBaseBrick">
+                  <brickId>98991ba7-ad0d-4bbd-ae8f-3e29096b1fa9</brickId>
+                  <commentedOut>false</commentedOut>
+                  <formulaList>
+                    <formula category="FIREBASE_ID">
+                      <additionalChildren/>
+                      <type>STRING</type>
+                      <value>clecer-7e9ec-default-rtdb.firebaseio.com/</value>
+                    </formula>
+                    <formula category="FIREBASE_KEY">
+                      <additionalChildren/>
+                      <type>STRING</type>
+                      <value>clc</value>
+                    </formula>
+                  </formulaList>
+                  <userVariable type="UserVariable" serialization="custom">
+                    <userVariable>
+                      <default>
+                        <initialIndex>-1</initialIndex>
+                        <deviceValueKey>b0417f26-4706-4e1a-8bfa-42b045be4dba</deviceValueKey>
+                        <name>click</name>
+                      </default>
+                    </userVariable>
+                  </userVariable>
+                </brick>
+              </brickList>
+              <commentedOut>false</commentedOut>
+              <scriptId>fa4054d4-5e41-41fd-a68f-d2866d5b8549</scriptId>
+            </script>
+          </scriptList>
+          <nfcTagList/>
+          <userVariables/>
+          <userLists/>
+          <userDefinedBrickList/>
+        </object>
+      </objectList>
+    </scene>
+  </scenes>
+  <programVariableList>
+    <userVariable reference="../../scenes/scene/objectList/object[2]/scriptList/script/brickList/brick[3]/userVariable"/>
+  </programVariableList>
+  <programListOfLists/>
+  <programMultiplayerVariableList/>
+</program>
